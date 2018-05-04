@@ -77,7 +77,7 @@ public class GT4500 implements SpaceShip {
     else if(firingMode == firingMode.All){
         // try to fire both of the torpedo stores
 
-	firingSuccess = true;
+	firingSuccess = (primaryTorpedoStore.fire(1) && secondaryTorpedoStore.fire(1));
     }
 
     return firingSuccess;
